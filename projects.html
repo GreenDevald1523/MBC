@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="./slick/slick-theme.css" />
     <link rel="stylesheet" href="./css/style.css">
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
     <title>МВС Проекты</title>
@@ -16,7 +18,7 @@
         <div class="content">
             <div class="popup__bg">
                 <div class="popup">
-                    <img src="./img/close-popup.png" class="close-popup">
+                    <img src="./img/close-popup.svg" class="close-popup">
                     <p class="popup-title">
                         Как обратиться за помощью?
                     </p>
@@ -26,7 +28,7 @@
                                 Напишите в WhatsApp с пометкой, что вы с обращением
                             </p>
                             <a href="tel:+79260292070" class="popup-help-item-phone">
-                                <img src="./img/phone.png" alt="phone" class="phone-icon">
+                                <img src="./img/phone.svg" alt="phone" class="phone-icon">
                                 8 926 029-20-70
                             </a>
                         </div>
@@ -35,7 +37,7 @@
                                 Отправьте Email на почту
                             </p>
                             <a href="mailto:anomvs@gmail.com" class="popup-help-item-phone">
-                                <img src="./img/Mail.png" alt="phone" class="phone-icon">
+                                <img src="./img/Mail.svg" alt="phone" class="phone-icon">
                                 anomvs@gmail.com
                             </a>
                         </div>
@@ -48,7 +50,7 @@
                         <div class="header__logo" data-aos="zoom-in" data-aos-offset="100" data-aos-delay="100"
                             data-aos-duration="1000" data-aos-once="true">
                             <a href="./">
-                                <img src="./img/мвс лого 1.png" alt="logo">
+                                <img src="./img/мвс лого 1.svg" alt="logo">
                             </a>
                         </div>
                         <p class="header__text" data-aos="fade-down" data-aos-offset="100" data-aos-delay="150"
@@ -60,7 +62,7 @@
                                 <li class="header__menu-item" data-aos="fade-down" data-aos-offset="100"
                                     data-aos-delay="200" data-aos-duration="1000" data-aos-once="true">
                                     <a href="/">Главная</a>
-                                    <span style="opacity: 1; bottom: -5px" class="header__menu-item-underline"></span>
+                                    <span class="header__menu-item-underline"></span>
                                 </li>
                                 <li class="header__menu-item" data-aos="fade-down" data-aos-offset="100"
                                     data-aos-delay="250" data-aos-duration="1000" data-aos-once="true">
@@ -70,7 +72,7 @@
                                 <li class="header__menu-item" data-aos="fade-down" data-aos-offset="100"
                                     data-aos-delay="300" data-aos-duration="1000" data-aos-once="true">
                                     <a href="./projects.html">Проекты</a>
-                                    <span class="header__menu-item-underline"></span>
+                                    <span style="opacity: 1; bottom: -5px" class="header__menu-item-underline"></span>
                                 </li>
                             </ul>
                         </nav>
@@ -83,185 +85,62 @@
             </header>
             <main class="main">
                 <div class="container">
-                    <section class="sec-2">
-                        <h2 class="sec-1-title" data-aos="zoom-out-right" data-aos-offset="100" data-aos-delay="100"
-                            data-aos-duration="1000" data-aos-once="true">
-                            Специалисты
+                    <section class="sec-slider">
+                        <h2 class="sec-1-title ta-center" data-aos="zoom-out-right" data-aos-offset="100"
+                            data-aos-delay="100" data-aos-duration="1000" data-aos-once="true">
+                            Проекты
                         </h2>
-                        <div class="sec-2-items">
-                            <div class="sec-2-items-col">
-                                <div class="sec-2-item" id="card1" data-aos="fade-right" data-aos-offset="100"
-                                    data-aos-delay="150" data-aos-duration="1000" data-aos-once="true">
-                                    <div class="sec-2-item-body" id="open1body">
-                                        <div class="sec-2-item-pic">
-                                            <img src="./img/Агапов Михаил 1.jpg" alt="1">
-                                        </div>
-                                        <div class="sec-2-item-text">
-                                            <h5 class="sec-2-item-title">
-                                                Агапов Михаил Андреевич
-                                            </h5>
-                                            <p class="sec-2-item-desc">
-                                                Действующие сертификаты: хирургия, онкология, колопроктология,
-                                                организация
-                                                здравоохранения <br><br>
-                                                Навыки: хирургия, онкология, колопроктология. <br> <br>
-                                                Ученая степень: доктор медицинских наук, профессор <br> <br>
-                                            </p>
-                                            <p id="open1" class="sec-2-item-desc hidden">
-                                                Город: Москва <br> <br>
-                                                Учреждение: МНОЦ МГУ им. М.И. Ломоносова
-                                            </p>
-                                        </div>
-                                        <button id="btnClose1" class="close-toggle hidden">
-                                            <img src="./img/close-toggle.png" alt="close">
-                                        </button>
-                                    </div>
-                                    <button id="btn1" class="open-toggle">
-                                        <div class="open-toggle-figure">
-                                            <img src="./img/open-toggle.png" alt="open">
-                                        </div>
-                                    </button>
-                                </div>
-                                <div class="sec-2-item" data-aos="fade-right" data-aos-offset="100" data-aos-delay="200"
-                                    data-aos-duration="1000" data-aos-once="true">
-                                    <div class="sec-2-item-body" id="open2body">
-                                        <div class="sec-2-item-pic">
-                                            <img src="./img/Башков Андрей 1.jpg" alt="1">
-                                        </div>
-                                        <div class="sec-2-item-text">
-                                            <h5 class="sec-2-item-title">
-                                                Башков Андрей Николаевич
-                                            </h5>
-                                            <p class="sec-2-item-desc">
-                                                ВУЗ: 2006 Московский государственный медико-стоматологический
-                                                университет им. А.И. Евдокимова <br> <br>
-                                                Клиническая ординатура – 2006 – 2008 – УНМЦ Управления Делами Президента
-                                                РФ <br> <br>
-                                                Действующие сертификаты: <br> <br>
-                                            </p>
-                                            <p id="open2" class="sec-2-item-desc hidden">
-                                                рентгенология, радиология <br> <br>
-                                                Стаж: с 2009 года по настоящее время врач-рентгенолог
-                                                с 2015 года – зав. отд. лучевой и радиоизотопной диагностики <br> <br>
-                                                Навыки: радиология различных областей, акцент на абдоминальную
-                                                радиологию <br> <br>
-                                                Ученая степень: к.м.н. <br> <br>
-                                                Учреждение: ФГБУ ГНЦ ФМБЦ им А.И.Бурназяна ФМБА России
-                                            </p>
-                                        </div>
-                                        <button id="btnClose2" class="close-toggle hidden">
-                                            <img src="./img/close-toggle.png" alt="close">
-                                        </button>
-                                    </div>
-                                    <button id="btn2" class="open-toggle">
-                                        <div class="open-toggle-figure">
-                                            <img src="./img/open-toggle.png" alt="open">
-                                        </div>
-                                    </button>
-                                </div>
-                            </div>
-                            <div class="sec-2-items-col">
-                                <div class="sec-2-item" data-aos="fade-left" data-aos-offset="100" data-aos-delay="100"
-                                    data-aos-duration="1000" data-aos-once="true">
-                                    <div class="sec-2-item-body" id="open3body">
-                                        <div class="sec-2-item-pic">
-                                            <img src="./img/Аминова Лиана 1.jpg" alt="1">
-                                        </div>
-                                        <div class="sec-2-item-text">
-                                            <h5 class="sec-2-item-title">
-                                                Аминова Лиана Назимовна
-                                            </h5>
-                                            <p class="sec-2-item-desc">
-                                                ВУЗ: Башкирский государственный медицинский институт, год окончания 1987
-                                                лечебное дело. <br> <br>
-
-                                                Сертификаты: Акушерство и Гинекология, Онкология, ультразвуковая
-                                                диагностика, организация здравоохранение <br> <br>
-                                                Cфера интересов:
-                                            </p>
-                                            <p id="open3" class="sec-2-item-desc hidden">
-                                                амбулаторная и оперативная гинекология, онкогинекология, хирургия
-                                                тазового дна. <br> <br>
-                                                Стаж работы 32 года. <br> <br>
-
-                                                Учреждение: МНОЦ МГУ <br> <br>
-
-                                                Ученная степень: к.м.н. <br> <br>
-
-                                                Признание: Заслуженный врач республики Башкортостан.
-                                            </p>
-                                        </div>
-                                        <button id="btnClose3" class="close-toggle hidden">
-                                            <img src="./img/close-toggle.png" alt="close">
-                                        </button>
-                                    </div>
-                                    <button id="btn3" class="open-toggle">
-                                        <div class="open-toggle-figure">
-                                            <img src="./img/open-toggle.png" alt="open">
-                                        </div>
-                                    </button>
-                                </div>
-                                <div class="sec-2-item" data-aos="fade-left" data-aos-offset="100" data-aos-delay="150"
-                                    data-aos-duration="1000" data-aos-once="true">
-                                    <div class="sec-2-item-body" id="open4body">
-                                        <div class="sec-2-item-pic">
-                                            <img src="./img/Биктимиров Рафаэль 1.jpg" alt="1">
-                                        </div>
-                                        <div class="sec-2-item-text">
-                                            <h5 class="sec-2-item-title">
-                                                Биктимиров Рафаэль Габбасович
-                                            </h5>
-                                            <p class="sec-2-item-desc">
-                                                Соучредитель АНО «Мультидисциплинарное Врачебное Содружество» <br> <br>
-                                                ВУЗ: 1979 2МОЛГМИ им Пирогова <br> <br>
-                                                Действующие сертификаты: хирургия, урология, онкология <br> <br>
-                                            </p>
-                                            <p id="open4" class="sec-2-item-desc hidden">
-                                                Стаж: 1979-1981 Больница ОМЗ хирург, уролог отд. хирургии, урологии,
-                                                г.Орск <br> <br>
-                                                1981-1983 Военно-полевой госпиталь № 329 (в/ч пп 86608), хирург отд.
-                                                хирургии. Республика Афганистан <br> <br>
-                                                1983-1985 2 Московский гос. мед. институт, каф. урологии <br> <br>
-                                                1985-1987 Ликинская б-ца. уролог отд. хирургии г Ликино Дулево <br> <br>
-                                                1987 по н.в. зав.отделением урологии ФГБУ ФКЦ ВМТ ФМБА России <br> <br>
-                                                2018 старший научный сотрудник ФГБУ «ГНЦ лазерной медицины им. О.К.
-                                                Скобелкина» <br> <br>
-                                                Навыки: весь объем операций в урологии <br> <br>
-                                                Категория: высшая <br> <br>
-                                                Ученое степень: к.м.н. <br> <br>
-                                                Город: Москва <br> <br>
-                                                Учреждение: ФГБУ ФКЦ ВМТ ФМБА России <br> <br>
-                                                Сайт учреждения (отделения): http://www.kb119.ru <br> <br>
-                                                Средний объем операции в год в отделении (онко/неонко): 300/1000 <br>
-                                                <br>
-                                                Средний объем операции в год у доктора (онко/неонко): 100/300 <br> <br>
-                                                Возможные каналы госпитализации: ОМС, ВМП, ДМС, договор <br> <br>
-                                                Среднее количество публикаций, выступлений в год: 20/3 <br> <br>
-                                                Признание: Отличник Здравоохранения, Заслуженный врач РФ, имеет
-                                                правительственные награды СССР, РФ, Республики Афганистан, отраслевые
-                                                (Росавиакосмос) награды - медали и ордена.
-                                            </p>
-                                        </div>
-                                        <button id="btnClose4" class="close-toggle hidden">
-                                            <img src="./img/close-toggle.png" alt="close">
-                                        </button>
-                                    </div>
-                                    <button id="btn4" class="open-toggle">
-                                        <div class="open-toggle-figure">
-                                            <img src="./img/open-toggle.png" alt="open">
-                                        </div>
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                        <a href="./specialisty.html" class="all-spec" data-aos="zoom-out-up" data-aos-offset="100"
+                        <a href="./index.html" class="all-spec back" data-aos="zoom-out-up" data-aos-offset="100"
                             data-aos-delay="250" data-aos-duration="1000" data-aos-once="true">
+                            <img class="arrow black-arrow" src="./img/arrow.svg" alt="arrow">
+                            <img class="arrow white-arrow" src="./img/white-arrow.svg" alt="">
                             <button class="all-spec-btn">
-                                Все специалисты
+                                Главная
                             </button>
-                            <img class="arrow black-arrow" src="./img/arrow.png" alt="arrow">
-                            <img class="arrow white-arrow" src="./img/white-arrow.png" alt="">
                         </a>
+                        <h3 class="project-title" data-aos="fade-up" data-aos-offset="100" data-aos-delay="150"
+                            data-aos-duration="1000" data-aos-once="true">
+                            На “Хирургической Кухне”
+                        </h3>
+                        <p class="project-text" data-aos="fade-up" data-aos-offset="100" data-aos-delay="150"
+                            data-aos-duration="1000" data-aos-once="true">
+                            Данное меропрятие нацелено на разбор нетривиальных, сложных и спорных операций. Опытные
+                            специалисты говорят о выборе визуализации, энергии, шовных материалов. Много внимания
+                            уделяется нюансам и приемам, которые использованы во время работы
+                        </p>
+                        <div class="carousel-videos-first carousel-videos" data-aos="flip-up" data-aos-offset="100" data-aos-delay="100"
+                        data-aos-duration="1000" data-aos-once="true">
+                            <a class="carousel-video"></a>
+                            <a class="carousel-video"></a>
+                            <a class="carousel-video"></a>
+                            <a class="carousel-video"></a>
+                        </div>
+                        <div class="carousel-videos-arrows" data-aos="fade-up" data-aos-offset="100"
+                            data-aos-delay="150" data-aos-duration="1000" data-aos-once="true">
+                            <img src="./img/slide-left.svg" class="carousel-videos-arrow slider-prev-first">
+                            <img src="./img/slide-right.svg" class="carousel-videos-arrow slider-next-first">
+                        </div>
+                        <h3 class="project-title" data-aos="fade-up" data-aos-offset="100" data-aos-delay="150"
+                            data-aos-duration="1000" data-aos-once="true">
+                            Наша операционная
+                        </h3>
+                        <p class="project-text" data-aos="fade-up" data-aos-offset="100" data-aos-delay="150"
+                            data-aos-duration="1000" data-aos-once="true">
+                            Этот проект имеет образовательную цель. Опытные специалисты передают свой опыт, показывая
+                            мастерство интересующимся специалистам.
+                        </p>
+                        <div class="carousel-videos-second carousel-videos" data-aos="flip-up" data-aos-offset="100" data-aos-delay="100"
+                        data-aos-duration="1000" data-aos-once="true">
+                            <a class="carousel-video"></a>
+                            <a class="carousel-video"></a>
+                            <a class="carousel-video"></a>
+                            <a class="carousel-video"></a>
+                        </div>
+                        <div class="carousel-videos-arrows" data-aos="fade-up" data-aos-offset="100"
+                            data-aos-delay="150" data-aos-duration="1000" data-aos-once="true">
+                            <img src="./img/slide-left.svg" class="carousel-videos-arrow slider-prev-second">
+                            <img src="./img/slide-right.svg" class="carousel-videos-arrow slider-next-second">
+                        </div>
                     </section>
                 </div>
             </main>
@@ -269,7 +148,7 @@
                 <div class="container">
                     <div class="footer__row">
                         <a href="/">
-                            <img src="./img/мвс лого 1 футер.png" alt="fr logo" data-aos="zoom-in" data-aos-offset="100"
+                            <img src="./img/мвс лого 1 футер.svg" alt="fr logo" data-aos="zoom-in" data-aos-offset="100"
                                 data-aos-delay="100" data-aos-duration="1000" data-aos-once="true">
                         </a>
                         <div class="footer-items">
@@ -316,7 +195,7 @@
                                     Мы в соц.сетях
                                 </h5>
                                 <a href="">
-                                    <img class="footer-ytb" src="./img/youtube.png" alt="ytb">
+                                    <img class="footer-ytb" src="./img/youtube.svg" alt="ytb">
                                 </a>
                             </div>
                         </div>
@@ -325,8 +204,11 @@
             </footer>
         </div>
     </div>
+    <script type="text/javascript" src="./slick/slick.js "></script>
+    <script type="text/javascript" src="./slick/slick.min.js "></script>
     <script src="./js/app.js"></script>
     <script src="./js/popup.js"></script>
+    <script src="./js/carousel.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
